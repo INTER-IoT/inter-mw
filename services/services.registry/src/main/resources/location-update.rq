@@ -1,0 +1,13 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+DROP GRAPH ?locationGraphId;
+
+INSERT DATA {
+    GRAPH ?locationGraphId {
+        ?locationId mdw:description ?description;
+            mdw:hasLatitude ?latitude;
+            mdw:hasLongitude ?longitude;
+    }
+}

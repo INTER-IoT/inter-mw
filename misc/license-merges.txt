@@ -1,0 +1,7 @@
+Apache License, Version 2.0|ASL 2.0|Apache 2|Apache 2.0|Apache 2.0 License|Apache License 2.0|Apache License v2.0|Apache License, 2.0|Apache Software License - Version 2.0|The Apache Software License, Version 2.0
+BSD 3-clause|BSD 3-clause license|BSD License 2.0|Revised BSD License|New BSD License|Modified BSD License|The New BSD License|Modified BSD
+BSD 2-clause|BSD 2-clause license|Simplified BSD License|FreeBSD License
+CDDL 1.0|Common Development and Distribution License (CDDL) v1.0
+CDDL 1.1|Common Development and Distribution License (CDDL), Version 1.1
+Eclipse Public License - Version 1.0|Eclipse Public License 1.0
+MIT License|The MIT License

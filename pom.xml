@@ -1,0 +1,460 @@
+<!--
+
+    Copyright 2016-2018 Universitat Politècnica de València
+    Copyright 2016-2018 Università della Calabria
+    Copyright 2016-2018 Prodevelop, SL
+    Copyright 2016-2018 Technische Universiteit Eindhoven
+    Copyright 2016-2018 Fundación de la Comunidad Valenciana para la
+    Investigación, Promoción y Estudios Comerciales de Valenciaport
+    Copyright 2016-2018 Rinicom Ltd
+    Copyright 2016-2018 Association pour le développement de la formation
+    professionnelle dans le transport
+    Copyright 2016-2018 Noatum Ports Valenciana, S.A.U.
+    Copyright 2016-2018 XLAB razvoj programske opreme in svetovanje d.o.o.
+    Copyright 2016-2018 Systems Research Institute Polish Academy of Sciences
+    Copyright 2016-2018 Azienda Sanitaria Locale TO5
+    Copyright 2016-2018 Alessandro Bassi Consulting SARL
+    Copyright 2016-2018 Neways Technologies B.V.
+
+    See the NOTICE file distributed with this work for additional information
+    regarding copyright ownership.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>eu.inter-iot</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <groupId>eu.interiot.intermw</groupId>
+    <artifactId>intermw</artifactId>
+    <version>2.5.0</version>
+    <packaging>pom</packaging>
+
+    <name>Parent POM file for the INTER-Middleware project</name>
+    <inceptionYear>2016</inceptionYear>
+
+    <properties>
+        <!-- TODO: promote some of the properties to the parent pom -->
+        <activemq-version>5.14.1</activemq-version>
+        <build-helper-version>1.12</build-helper-version>
+        <commons-io-version>2.5</commons-io-version>
+        <commons-lang3-version>3.5</commons-lang3-version>
+        <gson-version>2.8.0</gson-version>
+        <jacorb-version>3.4</jacorb-version>
+        <java-version>1.8</java-version>
+        <jts-version>1.13</jts-version>
+        <jodatime-version>2.9.3</jodatime-version>
+        <junit-version>4.12</junit-version>
+        <kafka.version>0.9.0.1</kafka.version>
+        <maven-compiler-version>3.5.1</maven-compiler-version>
+        <maven-compiler-source>${java.version}</maven-compiler-source>
+        <maven-compiler-target>${java.version}</maven-compiler-target>
+        <maven-javadoc-version>2.10.4</maven-javadoc-version>
+        <maven-plugin-version>1.0.0</maven-plugin-version>
+        <maven-source-version>3.0.1</maven-source-version>
+        <maven-version-min>3.2.1</maven-version-min>
+        <okhttp-version>2.7.5</okhttp-version>
+        <opensplice-version>6.4</opensplice-version>
+        <paho-version>1.0.2</paho-version>
+        <reflections-version>0.9.11</reflections-version>
+        <scala-minor-version>2.10</scala-minor-version>
+        <slf4j-version>1.7.21</slf4j-version>
+        <spark-version>2.5.2</spark-version>
+        <apache-httpclient>4.5.3</apache-httpclient>
+        <spring-rabbit-version>2.0.3.RELEASE</spring-rabbit-version>
+        <swagger-version>1.5.19</swagger-version>
+        <project-build-sourceEncoding>UTF-8</project-build-sourceEncoding>
+        <project-reporting-outputEncoding>UTF-8</project-reporting-outputEncoding>
+        <jetty-version>9.4.6.v20170531</jetty-version>
+        <jersey2-version>2.27</jersey2-version>
+        <servlet-api-version>3.1.0</servlet-api-version>
+        <logback-version>1.0.1</logback-version>
+        <jersey-version>1.13</jersey-version>
+        <log4j-version>2.8.2</log4j-version>
+        <mockito-version>2.23.0</mockito-version>
+        <jgitflow-maven-plugin.version>1.0-m5.1</jgitflow-maven-plugin.version>
+    </properties>
+
+    <prerequisites>
+        <maven>${maven-version-min}</maven>
+    </prerequisites>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://jira.inter-iot.eu/</url>
+    </issueManagement>
+
+    <developers>
+        <!-- TODO complete the list of developers -->
+        <developer>
+            <id>aromeu</id>
+            <name>Alberto Romeu</name>
+            <email>aromeu@prodevelop.es</email>
+            <organization>PRO</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <organizationUrl>http://www.prodevelop.es</organizationUrl>
+        </developer>
+        <developer>
+            <id>mllorente</id>
+            <name>Miguel Ángel Llorente</name>
+            <email>mllorente@prodevelop.es</email>
+            <organization>PRO</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <organizationUrl>http://www.prodevelop.es</organizationUrl>
+        </developer>
+        <developer>
+            <id>mmontesinos</id>
+            <name>Miguel Montesinos</name>
+            <email>mmontesinos@prodevelop.es</email>
+            <organization>PRO</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <organizationUrl>http://www.prodevelop.es</organizationUrl>
+        </developer>
+        <developer>
+            <id>flavio_fuart</id>
+            <name>Flavio Fuart</name>
+            <email>flavio.fuart@xlab.si</email>
+            <organization>XLAB</organization>
+            <roles>
+                <role>Master developer</role>
+            </roles>
+            <organizationUrl>http://www.xlab.si</organizationUrl>
+        </developer>
+        <developer>
+            <id>mmarkovic</id>
+            <name>Matevz Markovic</name>
+            <email>matevz.markovic@xlab.si</email>
+            <organization>XLAB</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <organizationUrl>http://www.xlab.si</organizationUrl>
+        </developer>
+    </developers>
+
+    <!-- FIXME: ADD THIS TO THE ROOT POM? -->
+    <!-- <scm> <connection> scm:git:https://git.inter-iot.eu/Inter-IoT/intermw/src/master/src/comm
+        </connection> <developerConnection> scm:git:https://git.inter-iot.eu/Inter-IoT/intermw/src/master/src/comm
+        </developerConnection> </scm> -->
+
+    <repositories>
+        <repository>
+            <id>nexus.inter-iot.eu-releases</id>
+            <url>http://nexus.inter-iot.eu/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>nexus.inter-iot.eu-snapshots</id>
+            <url>http://nexus.inter-iot.eu/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>Eclipse Paho Repo</id>
+            <url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
+        </repository>
+        <repository>
+            <id>prodevelop-github-server</id>
+            <name>Prodevelop's maven repository</name>
+            <url>https://raw.githubusercontent.com/Prodevelop/mvn-repo/master/release</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>osgeo</id>
+            <name>Open Source Geospatial Foundation Repository</name>
+            <url>http://download.osgeo.org/webdav/geotools/</url>
+        </repository>
+        <repository>
+            <id>maven2-repository.dev.java.net</id>
+            <name>Java.net Maven 2 Repository</name>
+            <url>http://download.java.net/maven/2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit-version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>eu.inter-iot.message</groupId>
+            <artifactId>Message</artifactId>
+            <type>jar</type>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven-javadoc-version}</version>
+                <configuration>
+                    <failOnError>false</failOnError>
+                    <additionalparam>-Xdoclint:none</additionalparam>
+                </configuration>
+
+                <reportSets>
+                    <reportSet>
+                        <id>non-aggregate</id>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                    <reportSet>
+                        <id>aggregate</id>
+                        <reports>
+                            <report>aggregate</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-version}</version>
+                    <configuration>
+                        <encoding>${project-build-sourceEncoding}</encoding>
+                        <source>${java-version}</source>
+                        <target>${java-version}</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${build-helper-version}</version>
+                    <executions>
+                        <execution>
+                            <id>remove-old-artifacts</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>remove-project-artifact</goal>
+                            </goals>
+                            <configuration>
+                                <removeAll>false</removeAll>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>external.atlassian.jgitflow</groupId>
+                    <artifactId>jgitflow-maven-plugin</artifactId>
+                    <version>${jgitflow-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>3.0</version>
+                    <configuration>
+                        <header>misc/license-header.txt</header>
+                        <includes>
+                            <include>**/*.java</include>
+                            <include>**/*.xml</include>
+                            <include>**/*.properties</include>
+                        </includes>
+                        <excludes>
+                            <exclude>misc/*</exclude>
+                        </excludes>
+                        <mapping>
+                            <java>SLASHSTAR_STYLE</java>
+                        </mapping>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <!--<configuration>-->
+                <!--<flowInitContext>-->
+                <!--<masterBranchName>master</masterBranchName>-->
+                <!--<developBranchName>development</developBranchName>-->
+                <!--<featureBranchPrefix>feature/</featureBranchPrefix>-->
+                <!--<releaseBranchPrefix>release/</releaseBranchPrefix>-->
+                <!--<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>-->
+                <!--</flowInitContext>-->
+                <!--</configuration>-->
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>licenses</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>license-maven-plugin</artifactId>
+                        <version>1.16</version>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <id>aggregate-download-licenses</id>
+                                <goals>
+                                    <goal>aggregate-download-licenses</goal>
+                                </goals>
+                                <configuration>
+                                    <excludedGroups>eu.interiot.intermw</excludedGroups>
+                                    <licensesConfigFile>misc/dependencies-license-info.xml</licensesConfigFile>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>aggregate-add-third-party</id>
+                                <goals>
+                                    <goal>aggregate-add-third-party</goal>
+                                </goals>
+                                <configuration>
+                                    <outputDirectory>${session.executionRootDirectory}</outputDirectory>
+                                    <thirdPartyFilename>NOTICE</thirdPartyFilename>
+                                    <excludedGroups>eu.interiot.intermw</excludedGroups>
+                                    <fileTemplate>misc/NOTICE-template.ftl</fileTemplate>
+                                    <missingFile>misc/third-party.properties</missingFile>
+                                    <aggregateMissingLicensesFile>misc/third-party.properties
+                                    </aggregateMissingLicensesFile>
+                                    <useMissingFile>true</useMissingFile>
+                                    <useRepositoryMissingFiles>false</useRepositoryMissingFiles>
+                                    <licenseMergesFile>misc/license-merges.txt</licenseMergesFile>
+                                    <includedLicenses>
+                                        <includedLicense>Apache License, Version 2.0</includedLicense>
+                                        <includedLicense>CC0</includedLicense>
+                                        <includedLicense>CDDL + GPLv2 with classpath exception</includedLicense>
+                                        <includedLicense>CDDL+GPL License</includedLicense>
+                                        <includedLicense>CDDL 1.0</includedLicense>
+                                        <includedLicense>CDDL 1.1</includedLicense>
+                                        <includedLicense>Eclipse Public License - Version 1.0</includedLicense>
+                                        <includedLicense>MIT License</includedLicense>
+                                        <includedLicense>The JSON License</includedLicense>
+                                        <includedLicense>WTFPL</includedLicense>
+                                        <includedLicense>BSD 2-clause</includedLicense>
+                                        <includedLicense>BSD 3-clause</includedLicense>
+                                        <includedLicense>BSD Like 2-clause</includedLicense>
+                                        <includedLicense>BSD Like 3-clause</includedLicense>
+                                        <!-- Currently not used, but may be added
+                                        <includedLicense>MPL 1.1</includedLicense>
+                                        <includedLicense>Public Domain</includedLicense>
+                                        <includedLicense>The W3C License</includedLicense>
+                                        <includedLicense>The SAX License</includedLicense> -->
+                                        <!-- Not compatible with this project and cannot be used:
+                                            Unknown license; GPL v2; GPL2 w/ CPE; LGPL 2.1;BSD-4-Clause
+                                        -->
+                                        <!-- About BSD licences.
+                                            The BSD-4-Clause is not compatible with this project
+                                            BSD 2-clause, BSD 3-clause are OK.
+
+
+                                         Foer each included module that states the use of a "BSD" or "BSD-like" license it
+                                        should be chceked which version it uses. Then, if it uses a compatible
+                                        version, the exception should be added to the ????? file with one of the texts:
+                                        "BSD 3-clause", "BSD 2-clause", "BSD Like 3-clause", "BSD Like 2-clause".
+                                        -->
+                                    </includedLicenses>
+                                    <failOnBlacklist>true</failOnBlacklist>
+                                    <overrideFile>misc/override-third-party.properties</overrideFile>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <modules>
+        <module>mw.commons</module>
+        <module>api</module>
+        <module>bridges</module>
+        <module>comm</module>
+        <module>services</module>
+        <module>integration-tests</module>
+        <module>performance-tests</module>
+    </modules>
+</project>

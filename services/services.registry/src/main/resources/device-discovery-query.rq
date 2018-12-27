@@ -1,0 +1,15 @@
+PREFIX iiot: <http://inter-iot.eu/GOIoTP#>
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT {?s ?p ?o}
+WHERE {
+    GRAPH <http://inter-iot.eu/devices> {
+        ?deviceId sosa:isHostedBy ?platformId;
+        GRAPH ?deviceId {
+            ?s ?p ?o;
+            {conditions}
+        }
+    }
+}

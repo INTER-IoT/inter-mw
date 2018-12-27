@@ -1,0 +1,17 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+
+SELECT  ?client ?callbackUrl ?receivingCapacity ?responseDelivery ?responseFormat
+WHERE {
+   GRAPH <http://inter-iot.eu/clients> {
+      ?literal ?pred ?obj
+      BIND(?literal AS ?clientId)
+   }
+   GRAPH ?tempClientId {
+      ?client mdw:callbackUrl ?callbackUrl;
+          mdw:receivingCapacity ?receivingCapacity;
+          mdw:responseDelivery ?responseDelivery;
+          mdw:responseFormat ?responseFormat
+
+   }
+   FILTER(?clientId = ?tempClientId)
+}

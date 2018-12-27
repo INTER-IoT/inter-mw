@@ -1,0 +1,8 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+CONSTRUCT {?s ?p ?o}
+WHERE {
+  GRAPH ?graph {
+    ?s ?p ?o
+  }
+}

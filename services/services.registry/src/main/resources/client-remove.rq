@@ -1,0 +1,9 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+DELETE WHERE {
+  GRAPH <http://inter-iot.eu/clients> {
+    ?clientId ?p1 ?o1
+  }
+};
+
+DROP GRAPH ?clientIDGraph

@@ -1,0 +1,20 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX iiot: <http://inter-iot.eu/GOIoTP#>
+
+INSERT DATA {
+    GRAPH <http://inter-iot.eu/devices> {
+        ?deviceId sosa:isHostedBy ?hostedBy
+    }
+};
+
+INSERT DATA {
+  GRAPH ?deviceId {
+    ?deviceId iiot:hasName ?name;
+        sosa:isHostedBy ?hostedBy;
+        iiot:hasLocation ?location;
+        {type}
+  }
+}

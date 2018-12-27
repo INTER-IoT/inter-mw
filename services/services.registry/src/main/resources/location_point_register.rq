@@ -1,0 +1,15 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+
+INSERT DATA {
+    GRAPH <http://inter-iot.eu/location_points> {
+        ?locationId sosa:isHostedBy ?platformId;
+            mdw:description ?description;
+            geo:hasGeometry _:b0 .
+        _:b0 rdf:type sf:Point;
+            geo:asWKT ?point^^geo:wktLiteral.
+    }
+};

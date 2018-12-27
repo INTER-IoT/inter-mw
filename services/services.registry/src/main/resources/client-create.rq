@@ -1,0 +1,10 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+INSERT DATA {
+  GRAPH ?graph {
+    ?clientId mdw:callbackUrl ?callbackUrl;
+        mdw:receivingCapacity ?receivingCapacity;
+        mdw:responseDelivery ?responseDelivery;
+        mdw:responseFormat ?responseFormat
+  }
+}

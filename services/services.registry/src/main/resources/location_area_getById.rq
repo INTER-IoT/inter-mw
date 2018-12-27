@@ -1,0 +1,18 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+SELECT ?locationId ?platformId ?description ?geometryType ?geometryWKT
+WHERE {
+  GRAPH <http://inter-iot.eu/location_areas> {
+    ?locationIdInput sosa:isHostedBy ?platformIdInput;
+        mdw:description ?description;
+        geo:hasGeometry ?hasGeometry .
+    ?hasGeometry rdf:type ?geometryType;
+        geo:asWKT ?geometryWKT .
+    ?locationId sosa:isHostedBy ?platformId;
+  }
+  FILTER(?locationIdInput = ?locationId)
+  FILTER(?platformIdInput = ?platformId)
+}

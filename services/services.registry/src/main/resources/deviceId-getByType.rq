@@ -1,0 +1,12 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+SELECT ?deviceId
+WHERE {
+  GRAPH <http://inter-iot.eu/devices> {
+    ?deviceId sosa:isHostedBy ?platformId;
+  }
+  GRAPH ?deviceId {
+    ?deviceId ?p ?sosaDeviceType
+  }
+}

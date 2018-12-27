@@ -1,0 +1,23 @@
+PREFIX afn: <http://jena.hpl.hp.com/ARQ/function#>
+PREFIX fn: <http://www.w3.org/2005/xpath-functions#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX par: <http://parliament.semwebcentral.org/parliament#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX iiotex: <http://inter-iot.eu/GOIoTPex#>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX iiot: <http://inter-iot.eu/GOIoTP#>
+PREFIX InterIoT: <http://inter-iot.eu/>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+
+CONSTRUCT {?s ?p ?o}
+WHERE {
+        GRAPH <http://inter-iot.eu/platforms> {
+          ?s ?p ?o .
+        }
+}

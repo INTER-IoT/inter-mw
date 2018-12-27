@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<rdf:RDF  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:georss="http://www.georss.org/georss/"
+          xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+          xmlns:my_port="http://www.myport.com/geo/my_port#"
+          xmlns:sripas="http://www.inter-iot.eu/sripas#"
+          xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#"
+          xmlns:dcelem="http://purl.org/dc/elements/1.1/"
+          xmlns:exmo="http://exmo.inrialpes.fr/align/ext/1.0/#"
+          xmlns="http://www.inter-iot.eu/sripas#">
+    <align:Alignment>
+
+        <dcelem:title>Test_Downstream_Alignment</dcelem:title>
+        <exmo:version>1.0</exmo:version>
+        <dcelem:creator>SRIPAS</dcelem:creator>
+        <dcelem:description>Downstream alignment for the Test platform</dcelem:description>
+
+        <align:xml>yes</align:xml>
+        <align:level>2IPSM</align:level>
+        <align:type>**</align:type>
+        <align:method>[method]</align:method>
+        <align:time>[time]</align:time>
+
+        <align:onto1>
+            <align:Ontology rdf:about="http://www.inter-iot.eu/example1.owl">
+                <align:location>file:///Java/alignapi/html/tutorial/myOnto1.owl</align:location>
+                <align:formalism>
+                    <align:Formalism align:name="OWL2.0" align:uri="http://www.w3.org/2002/07/owl#" />
+                </align:formalism>
+            </align:Ontology>
+        </align:onto1>
+        <align:onto2>
+            <align:Ontology rdf:about="http://www.inter-iot.eu/example2.owl">
+                <align:location>file:///Java/alignapi/html/tutorial/myOnto2.owl</align:location>
+                <align:formalism>
+                    <align:Formalism align:name="OWL2.0" align:uri="http://www.w3.org/2002/07/owl#" />
+                </align:formalism>
+            </align:Ontology>
+        </align:onto2>
+
+        <sripas:steps rdf:parseType="Collection">
+            <sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#cell1"/>
+            <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#cell2"/>
+            <sripas:step sripas:order="3" sripas:cell="http://www.inter-iot.eu/sripas#cell3"/>
+        </sripas:steps>
+
+        <align:map>
+            <align:Cell rdf:about="http://www.inter-iot.eu/sripas#cell1">
+                <align:entity1 rdf:parseType="Literal">
+                    <sripas:node_CTX>
+                        <georss:point>
+                            <sripas:node_x/>
+                        </georss:point>
+                    </sripas:node_CTX>
+                </align:entity1>
+                <align:entity2 rdf:parseType="Literal">
+                    <sripas:node_CTX>
+                        <wgs84_pos:lat>
+                            <sripas:node_y/>
+                        </wgs84_pos:lat>
+                        <wgs84_pos:long>
+                            <sripas:node_z/>
+                        </wgs84_pos:long>
+                    </sripas:node_CTX>
+                </align:entity2>
+                <align:relation>=</align:relation>
+                <align:measure rdf:datatype ="http://www.w3.org/2001/XMLSchema#float">1.0</align:measure>
+                <sripas:transformation rdf:parseType="Literal">
+                    <sripas:function about="replace">
+                        <sripas:param order="1" about="http://www.inter-iot.eu/sripas#node_x"/>
+                        <sripas:param order="2" val="^\\s*(\\d+)\\s"/>
+                        <sripas:param order="3" val="$1"/>
+                        <sripas:return about="http://www.inter-iot.eu/sripas#node_y"/> <!-- binding for the returned value -->
+                    </sripas:function>
+                    <sripas:function about="replace">
+                        <sripas:param order="1" about="http://www.inter-iot.eu/sripas#node_x"/>
+                        <sripas:param order="2" val=",\\s*(\\d+)\\s*$"/>
+                        <sripas:param order="3" val="$1"/>
+                        <sripas:return about="http://www.inter-iot.eu/sripas#node_z"/> <!-- binding for the returned value -->
+                    </sripas:function>
+                </sripas:transformation>
+                <sripas:filters rdf:parseType="Literal">
+                    <sripas:filter about="http://www.inter-iot.eu/sripas#node_x" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                </sripas:filters>
+            </align:Cell>
+        </align:map>
+
+        <align:map>
+            <align:Cell rdf:about="http://www.inter-iot.eu/sripas#cell2">
+                <align:entity1 rdf:parseType="Literal">
+                    <sripas:node_CTX>
+                        <my_port:hasGPSlatitude>
+                            <sripas:node_x/>
+                        </my_port:hasGPSlatitude>
+                    </sripas:node_CTX>
+                </align:entity1>
+                <align:entity2 rdf:parseType="Literal">
+                    <sripas:node_CTX>
+                        <wgs84_pos:lat>
+                            <sripas:node_x/>
+                        </wgs84_pos:lat>
+                    </sripas:node_CTX>
+                </align:entity2>
+                <align:relation>=</align:relation>
+                <align:measure rdf:datatype ="http://www.w3.org/2001/XMLSchema#float">1.0</align:measure>
+                <sripas:filters rdf:parseType="Literal">
+                    <sripas:filter about="http://www.inter-iot.eu/sripas#node_x" datatype="http://www.w3.org/2001/XMLSchema#integer"/>
+                </sripas:filters>
+            </align:Cell>
+        </align:map>
+
+    <align:map>
+        <align:Cell rdf:about="http://www.inter-iot.eu/sripas#cell3">
+            <align:entity1 rdf:parseType="Literal">
+                <sripas:node_CTY>
+                    <sripas:pred_P>
+                        <sripas:node_x/>
+                    </sripas:pred_P>
+                </sripas:node_CTY>
+            </align:entity1>
+            <align:entity2 rdf:parseType="Literal">
+                <sripas:node_CTY>
+                    <wgs84_pos:lat>
+                        <sripas:node_x/>
+                    </wgs84_pos:lat>
+                </sripas:node_CTY>
+            </align:entity2>
+            <align:relation>=</align:relation>
+            <align:measure rdf:datatype ="http://www.w3.org/2001/XMLSchema#float">1.0</align:measure>
+            <sripas:filters rdf:parseType="Literal">
+                <sripas:filter about="http://www.inter-iot.eu/sripas#node_x" datatype="http://www.w3.org/2001/XMLSchema#integer"/>
+            </sripas:filters>
+        </align:Cell>
+    </align:map>
+    </align:Alignment>
+</rdf:RDF>

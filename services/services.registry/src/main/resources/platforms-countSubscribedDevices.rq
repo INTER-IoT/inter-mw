@@ -1,0 +1,11 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+SELECT ?platformId (COUNT (DISTINCT ?deviceId) AS ?subscribedDevices)
+WHERE {
+  GRAPH <http://subscriptions> {
+    ?conversationId mdw:deviceId ?deviceId;
+  }
+  GRAPH ?deviceId {
+    ?deviceId sosa:isHostedBy ?platformId
+  }
+} GROUP BY ?platformId

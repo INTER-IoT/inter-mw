@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+
+DELETE WHERE {
+    GRAPH <http://inter-iot.eu/location_areas> {
+        ?locationId ?p ?o;
+            geo:hasGeometry ?geo .
+        ?geo rdf:type sf:Polygon;
+            geo:asWKT ?area .
+    }
+};

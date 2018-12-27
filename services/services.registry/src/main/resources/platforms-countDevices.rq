@@ -1,0 +1,7 @@
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+SELECT ?platformId (COUNT(?platformId) AS ?devices)
+WHERE {
+  GRAPH <http://inter-iot.eu/devices> {
+    ?deviceId sosa:isHostedBy ?platformId;
+  }
+} GROUP BY ?platformId

@@ -1,0 +1,813 @@
+{
+  "@graph" : [ {
+    "@graph" : [ {
+      "@id" : "InterIoT:message/meta/b9d5859f-1a31-4a37-a2b0-f3adcdf8c0ea",
+      "@type" : [ "InterIoT:message/meta", "InterIoT:message/Device_Init", "InterIoT:message/Response" ],
+      "InterIoT:message/SenderPlatformId" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "InterIoT:message/conversationID" : "conv15092cf0-f037-4031-87bd-318e2dad942e",
+      "InterIoT:message/dateTimeStamp" : "2018-09-05T12:18:40.455Z",
+      "InterIoT:message/messageID" : "msg58f74cd1-907b-46aa-8a29-183793153e56"
+    } ],
+    "@id" : "InterIoT:message/metadata"
+  }, {
+    "@graph" : [ {
+      "@id" : "_:b0",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b1",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b10",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b11",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b12",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b13",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b14",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b15",
+      "@type" : [ "InterIoT:LogVPmod#Presence", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b16",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Arrive", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b17",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b18",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b19",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b2",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Arrive", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b20",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b21",
+      "@type" : [ "InterIoT:LogVPmod#Sound", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b22",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b23",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b24",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Arrive", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b25",
+      "@type" : [ "InterIoT:LogVPmod#Presence", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b26",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b27",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b28",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b29",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b3",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b30",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b31",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b32",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b33",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b34",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b35",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b36",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b37",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b38",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Arrive", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b39",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b4",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b40",
+      "@type" : [ "InterIoT:LogVPmod#Presence", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b41",
+      "@type" : [ "InterIoT:LogVPmod#Emissions", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b42",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b43",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b44",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b45",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b46",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Arrive", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b47",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b48",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b49",
+      "@type" : [ "http://ontology.tno.nl/logiserv/Depart", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b5",
+      "@type" : [ "InterIoT:LogVPmod#Sound", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b50",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b51",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b52",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b53",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b54",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b55",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b6",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b7",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b8",
+      "@type" : [ "InterIoT:LogVPmod#Sound", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b9",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/emission/1",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Cabina VR-004",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/emission/1",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b41"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/1",
+      "@type" : [ "InterIoT:LogVPmod#EntrySensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "E1",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/1",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b24"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/10",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S5",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/10",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b47"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/11",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S6",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/11",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b27"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/12",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S7",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/12",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b26"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/13",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S8",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/13",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b13"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/2",
+      "@type" : [ "InterIoT:LogVPmod#EntrySensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "E2",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/2",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b16"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/3",
+      "@type" : [ "InterIoT:LogVPmod#EntrySensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "E3",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/3",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b2"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/4",
+      "@type" : [ "InterIoT:LogVPmod#EntrySensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "E4",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/4",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b38"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/5",
+      "@type" : [ "InterIoT:LogVPmod#EntrySensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "E5",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/5",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b46"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/6",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S1",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/6",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b49"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/7",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S2",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/7",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b35"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/8",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S3",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/8",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b17"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/gate/9",
+      "@type" : [ "InterIoT:LogVPmod#ExitSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "S4",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/gate/9",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b36"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L01",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L01",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b23"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L02",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L02",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b19"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L03",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L03",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b4"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L04",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L04",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b0"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L05",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L05",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b48"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L06",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L06",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b6"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L07",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L07",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b44"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L08",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L08",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b34"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L09",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L09",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b12"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L10",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L10",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b31"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L11",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L11",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b7"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L12",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L12",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b29"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L13",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L13",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b30"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L14",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L14",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b3"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L15",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L15",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b33"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L16",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L16",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b22"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L17",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L17",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b1"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L18",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L18",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b28"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L19",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L19",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b52"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L20",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L20",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b53"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L21",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L21",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b50"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L22",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L22",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b18"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L23",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L23",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b32"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L24",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L24",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b9"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L25",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L25",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b55"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L26",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L26",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b43"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L27",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L27",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b39"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/light/L28",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/light/L28",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b37"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/presenceSensors/P01",
+      "@type" : [ "InterIoT:LogVPmod#PresenceSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road (B01) - E3TCity managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/presenceSensors/P01",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b15"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/presenceSensors/P02",
+      "@type" : [ "InterIoT:LogVPmod#PresenceSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road (B14) - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/presenceSensors/P02",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b40"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/presenceSensors/P03",
+      "@type" : [ "InterIoT:LogVPmod#PresenceSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Railway switchgears Noatum access - APV managed",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/presenceSensors/P03",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b25"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/sound/1",
+      "@type" : [ "InterIoT:LogVPmod#SoundCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Control Túnel",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/sound/1",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b8"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/sound/2",
+      "@type" : [ "InterIoT:LogVPmod#SoundCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Cabina Inmisión",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/sound/2",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b5"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/sound/3",
+      "@type" : [ "InterIoT:LogVPmod#SoundCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "CCA Río Túria",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/sound/3",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b21"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/1",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "D.Este",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/1",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b20"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/2",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "P.Felipe",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/2",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b42"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/3",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Silo",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/3",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b14"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/4",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Sagunto",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/4",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b51"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/5",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "SAG D.Este",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/5",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b45"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/7",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "XITA",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/7",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b10"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/8",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "VR-013",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/8",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b54"
+      }
+    }, {
+      "@id" : "InterIoT:test-platform_discovery/weather/9",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "M.Serpis",
+      "iiotex:hasLocalId" : "http://test.inter-iot.eu/test-platform_discovery/weather/9",
+      "sosa:isHostedBy" : {
+        "@id" : "http://test.inter-iot.eu/test-platform_discovery"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b11"
+      }
+    }, {
+      "@id" : "http://test.inter-iot.eu/test-platform_discovery",
+      "@type" : "http://purl.oclc.org/NET/ssnx/ssn#Deployment"
+    } ],
+    "@id" : "InterIoT:message/payload"
+  } ],
+  "@context" : {
+    "iiotex" : "http://inter-iot.eu/GOIoTPex#",
+    "geosparql" : "http://www.opengis.net/ont/geosparql#",
+    "iiot" : "http://inter-iot.eu/GOIoTP#",
+    "InterIoT" : "http://inter-iot.eu/",
+    "ssn" : "http://www.w3.org/ns/ssn/",
+    "sosa" : "http://www.w3.org/ns/sosa/"
+  }
+}

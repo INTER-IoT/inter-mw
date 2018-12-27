@@ -1,0 +1,20 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX iiot: <http://inter-iot.eu/GOIoTP#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX ex: <http://www.example.org/POI#>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+
+INSERT DATA {
+    GRAPH <http://inter-iot.eu/location_areas> {
+        ?locationId sosa:isHostedBy ?platformId;
+            mdw:description ?description;
+            geo:hasGeometry _:b0 .
+        _:b0 rdf:type sf:Polygon;
+            geo:asWKT ?polygon_points^^geo:wktLiteral;
+    }
+};

@@ -1,0 +1,16 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+
+SELECT ?dynamicLocationId
+WHERE {
+  GRAPH <http://inter-iot.eu/location_areas> {
+    ?areaLocationId geo:hasGeometry ?hasGeometry .
+    ?hasGeometry geo:asWKT ?geometryWKT .
+  }
+  GRAPH <http://inter-iot.eu/location_points> {
+  	?dynamicLocationId geo:hasGeometry ?hasDynGeometry .
+  	?hasDynGeometry geo:asWKT ?dynGeometryWKT .
+  }
+  FILTER(geof:sfWithin(?dynGeometryWKT, ?geometryWKT))
+}

@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+
+SELECT ?locationId ?description ?latitude ?longitude
+WHERE {
+	GRAPH <http://inter-iot.eu/locations> {
+		?locationId rdf:type ?locationGraphId
+	}
+        GRAPH ?locationGraphId {
+		    ?locationId mdw:description ?description;
+                mdw:hasLatitude ?latitude;
+                mdw:hasLongitude ?longitude;
+	}
+}

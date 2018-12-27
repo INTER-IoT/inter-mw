@@ -1,0 +1,10 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+PREFIX subscriptions: <http://interiot.eu/subscriptions#>
+SELECT *
+WHERE {
+  GRAPH <http://subscriptions> {
+    ?conversationId mdw:clientId ?clientId ;
+       mdw:deviceId ?deviceId
+  }
+}

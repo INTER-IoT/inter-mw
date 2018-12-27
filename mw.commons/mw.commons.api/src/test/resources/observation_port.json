@@ -1,0 +1,310 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "InterIoT:message/meta/f836b6f9-ccdb-4c55-8f0c-64eeea2eca2c",
+          "@type": [
+            "Observation",
+            "meta"
+          ],
+          "SenderPlatformId": {
+            "@id": "http://www.inter-iot.eu/wso2port"
+          },
+          "conversationID": "convf9bf37b2-fa52-4c0d-bc11-4c8393f1f2f5",
+          "dateTimeStamp": "2018-07-10T07:08:30.689Z",
+          "messageID": "msg890cb71d-b567-4469-a5e9-1b6005f71ad7"
+        }
+      ],
+      "@id": "InterIoT:message/metadata"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "_:b0",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "PCIU9985662"
+        },
+        {
+          "@id": "_:b1",
+          "InterIoT:syntax/WSO2Port#haslprAlarmOk": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "1"
+          },
+          "InterIoT:syntax/WSO2Port#haslprOk": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "1"
+          },
+          "InterIoT:syntax/WSO2Port#hasocrAlarmDate": "2018-07-10T08:00:17.000+02:00",
+          "InterIoT:syntax/WSO2Port#hasocrAlarmOk": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "1"
+          },
+          "InterIoT:syntax/WSO2Port#hasocrDate": "2018-07-10T07:00:17.000+02:00",
+          "InterIoT:syntax/WSO2Port#hasocrOk": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "1"
+          },
+          "InterIoT:syntax/WSO2Port#hasquercusLprAlarmOk": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "1"
+          },
+          "InterIoT:syntax/WSO2Port#hasquercusLprOk": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "1"
+          }
+        },
+        {
+          "@id": "_:b10",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "PCIU9985663"
+        },
+        {
+          "@id": "_:b11",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "PCIU9985661"
+        },
+        {
+          "@id": "_:b12",
+          "@type": [
+            "InterIoT:LogVPmod#PlateReading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 2,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "96"
+          },
+          "InterIoT:LogVPmod#hasSystem": "QuercusLpr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b13"
+          },
+          "sosa:resultTime": "2018-07-10T04:00:17.000+02:00"
+        },
+        {
+          "@id": "_:b13",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "4444EKT"
+        },
+        {
+          "@id": "_:b14",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "3333EKT"
+        },
+        {
+          "@id": "_:b15",
+          "@type": [
+            "InterIoT:LogVPmod#Container1Reading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 2,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "93"
+          },
+          "InterIoT:LogVPmod#hasSystem": "ocr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b10"
+          }
+        },
+        {
+          "@id": "_:b16",
+          "@type": [
+            "InterIoT:LogVPmod#Container1Reading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 1,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "95"
+          },
+          "InterIoT:LogVPmod#hasSystem": "ocr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b11"
+          }
+        },
+        {
+          "@id": "_:b17",
+          "@type": [
+            "InterIoT:LogVPmod#PlateReading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 2,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "98"
+          },
+          "InterIoT:LogVPmod#hasSystem": "Lpr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b18"
+          },
+          "sosa:resultTime": "2018-07-10T02:00:17.000+02:00"
+        },
+        {
+          "@id": "_:b18",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "2222EKT"
+        },
+        {
+          "@id": "_:b19",
+          "@type": [
+            "InterIoT:LogVPmod#Container2Reading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 2,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "94"
+          },
+          "InterIoT:LogVPmod#hasSystem": "ocr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b0"
+          }
+        },
+        {
+          "@id": "_:b2",
+          "@type": "http://ontology.tno.nl/logiserv/Depart",
+          "iiot:hasLocation": {
+            "@id": "_:b5"
+          },
+          "iiotex:hasLocalId": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "2156762"
+          },
+          "InterIoT:LogVPmod#hasGateOpen": {
+            "@id": "_:b4"
+          },
+          "InterIoT:LogVPmod#hasSpire": {
+            "@id": "_:b3"
+          }
+        },
+        {
+          "@id": "_:b20",
+          "@type": [
+            "InterIoT:LogVPmod#PlateReading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 1,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "97"
+          },
+          "InterIoT:LogVPmod#hasSystem": "QuercusLpr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b14"
+          },
+          "sosa:resultTime": "2018-07-10T03:00:17.000+02:00"
+        },
+        {
+          "@id": "_:b3",
+          "@type": "http://ontology.tno.nl/logico/Instant",
+          "http://www.w3.org/2006/time#inXSDateTimeStamp": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+            "@value": "2018-07-10T06:00:17.000+02:00"
+          }
+        },
+        {
+          "@id": "_:b4",
+          "@type": "http://ontology.tno.nl/logico/Instant",
+          "http://www.w3.org/2006/time#inXSDateTimeStamp": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+            "@value": "2018-07-10T05:00:17.000+02:00"
+          }
+        },
+        {
+          "@id": "_:b5",
+          "@type": "iiot:Location",
+          "iiot:hasDescription": "7"
+        },
+        {
+          "@id": "_:b6",
+          "@type": [
+            "InterIoT:LogVPmod#PlateReading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 1,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "99"
+          },
+          "InterIoT:LogVPmod#hasSystem": "Lpr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b7"
+          },
+          "sosa:resultTime": "2018-07-10T01:00:17.000+02:00"
+        },
+        {
+          "@id": "_:b7",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "1111EKT"
+        },
+        {
+          "@id": "_:b8",
+          "@type": [
+            "InterIoT:LogVPmod#Container2Reading",
+            "sosa:Observation"
+          ],
+          "InterIoT:LogVPmod#hasReadingNumber": 2,
+          "InterIoT:LogVPmod#hasReliability": {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "92"
+          },
+          "InterIoT:LogVPmod#hasSystem": "ocr",
+          "sosa:hasFeatureOfInterest": {
+            "@id": "InterIoT:LogVPmod#1111EKT2222EKT"
+          },
+          "sosa:hasResult": {
+            "@id": "_:b9"
+          }
+        },
+        {
+          "@id": "_:b9",
+          "@type": "sosa:Result",
+          "iiot:hasResultValue": "PCIU9985664"
+        },
+        {
+          "@id": "InterIoT:LogVPmod#1111EKT2222EKT",
+          "@type": [
+            "http://ontology.tno.nl/logico/Truck",
+            "sosa:FeatureOfInterest"
+          ],
+          "iiotex:hasLocalId": "1111EKT2222EKT",
+          "http://ontology.tno.nl/logiserv/involves": {
+            "@id": "_:b2"
+          }
+        }
+      ],
+      "@id": "InterIoT:message/payload"
+    }
+  ],
+  "@context": {
+    "@vocab": "http://inter-iot.eu/message/",
+    "iiotex": "http://inter-iot.eu/GOIoTPex#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "iiot": "http://inter-iot.eu/GOIoTP#",
+    "InterIoT": "http://inter-iot.eu/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "sosa": "http://www.w3.org/ns/sosa/"
+  }
+}

@@ -1,0 +1,7 @@
+CONSTRUCT {?s ?p ?o}
+WHERE {
+GRAPH ?platformGraphId
+{
+          ?s ?p ?o .
+	}
+}

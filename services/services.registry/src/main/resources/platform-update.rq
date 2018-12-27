@@ -1,0 +1,27 @@
+PREFIX mdw: <http://interiot.eu/ont/middleware.owl#>
+PREFIX clients: <http://interiot.eu/clients#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+DROP GRAPH ?platformGraphId;
+
+INSERT DATA {
+  GRAPH ?platformGraphId {
+    ?platformId mdw:name ?name;
+          mdw:type ?type;
+          mdw:baseEndpoint ?baseEndpoint;
+          mdw:location ?location;
+          mdw:clientId ?clientId;
+          mdw:username ?username;
+          mdw:encryptedPassword ?encryptedPassword;
+          mdw:encryptionAlgorithm ?encryptionAlgorithm;
+          mdw:timeCreated ?timeCreated;
+          mdw:downstreamInputAlignmentName ?downstreamInputAlignmentName;
+          mdw:downstreamInputAlignmentVersion ?downstreamInputAlignmentVersion;
+          mdw:downstreamOutputAlignmentName ?downstreamOutputAlignmentName;
+          mdw:downstreamOutputAlignmentVersion ?downstreamOutputAlignmentVersion;
+          mdw:upstreamInputAlignmentName ?upstreamInputAlignmentName;
+          mdw:upstreamInputAlignmentVersion ?upstreamInputAlignmentVersion;
+          mdw:upstreamOutputAlignmentName ?upstreamOutputAlignmentName;
+          mdw:upstreamOutputAlignmentVersion ?upstreamOutputAlignmentVersion
+  }
+}

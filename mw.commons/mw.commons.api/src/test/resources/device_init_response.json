@@ -1,0 +1,547 @@
+{
+  "@graph" : [ {
+    "@graph" : [ {
+      "@id" : "InterIoT:message/meta/923a5bff-8a24-477a-90ef-f691deb7f142",
+      "@type" : [ "InterIoT:message/meta", "InterIoT:message/Device_Init", "InterIoT:message/Response" ],
+      "InterIoT:message/SenderPlatformId" : {
+        "@id" : "InterIoT:WSO2Port"
+      },
+      "InterIoT:message/conversationID" : "convf9bf37b2-fa52-4c0d-bc11-4c8393f1f2f5",
+      "InterIoT:message/dateTimeStamp" : "2018-07-13T13:40:09.484+02:00",
+      "InterIoT:message/messageID" : "msg641b6776-1224-432a-934a-2dd2caf09a3f"
+    } ],
+    "@id" : "InterIoT:message/metadata"
+  }, {
+    "@graph" : [ {
+      "@id" : "_:b0",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b1",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b10",
+      "@type" : [ "InterIoT:LogVPmod#Presence", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b11",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b12",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b13",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b14",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b15",
+      "@type" : [ "InterIoT:LogVPmod#Emissions", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b16",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b17",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b18",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b19",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b2",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b20",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b21",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b22",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b23",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b24",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b25",
+      "@type" : [ "InterIoT:LogVPmod#Emissions", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b26",
+      "@type" : [ "InterIoT:LogVPmod#Presence", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b27",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b28",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b29",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b3",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b30",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b31",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b32",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b33",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b34",
+      "@type" : [ "InterIoT:LogVPmod#Presence", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b35",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b36",
+      "@type" : [ "InterIoT:LogVPmod#Weather", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b4",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b5",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b6",
+      "@type" : [ "InterIoT:LogVPmod#Sound", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b7",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b8",
+      "@type" : [ "InterIoT:LogVPmod#Sound", "sosa:ObservableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "_:b9",
+      "@type" : [ "InterIoT:LogVPmod#Light", "sosa:ActuableProperty", "iiot:MeasurementKind" ]
+    }, {
+      "@id" : "InterIoT:wso2port/emission/1",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "CABINA PUERTO",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/emission/1",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b25"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/emission/2",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "CABINA PUERTO 2",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/emission/2",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b15"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L01",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L01",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b29"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L02",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L02",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b23"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L03",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L03",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b12"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L04",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L04",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b0"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L05",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L05",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b20"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L06",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L06",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b5"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L07",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L07",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b18"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L08",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L08",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b2"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L09",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L09",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b3"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L10",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L10",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b16"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L11",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L11",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b7"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L12",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L12",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b17"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L13",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L13",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b4"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L14",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L14",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b21"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L15",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L15",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b22"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L16",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L16",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b13"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L17",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L17",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b1"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L18",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L18",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b28"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L19",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L19",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b32"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L20",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L20",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b35"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L21",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L21",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b33"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L22",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L22",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b27"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L23",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L23",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b19"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L24",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L24",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b9"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L25",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L25",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b30"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L26",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L26",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b24"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L27",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L27",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b31"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/light/L28",
+      "@type" : [ "InterIoT:LogVPmod#EmissionCabin", "sosa:Actuator", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/light/L28",
+      "sosa:actsOnProperty" : {
+        "@id" : "_:b14"
+      },
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/presenceSensors/P01",
+      "@type" : [ "InterIoT:LogVPmod#PresenceSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road (B01) - E3TCity managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/presenceSensors/P01",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b10"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/presenceSensors/P02",
+      "@type" : [ "InterIoT:LogVPmod#PresenceSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Noatum access road (B14) - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/presenceSensors/P02",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b26"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/presenceSensors/P03",
+      "@type" : [ "InterIoT:LogVPmod#PresenceSensor", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "Railway switchgears Noatum access - APV managed",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/presenceSensors/P03",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b34"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/sound/1",
+      "@type" : [ "InterIoT:LogVPmod#SoundCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "3D0CF7BE-457A-4683-8553-0ADDBD38E7D3",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/sound/1",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b8"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/sound/2",
+      "@type" : [ "InterIoT:LogVPmod#SoundCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "2DD0CF7BE-457A-4683-8553-0ADDBD38E7D3",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/sound/2",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b6"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/weather/1",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "D.Este",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/weather/1",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b11"
+      }
+    }, {
+      "@id" : "InterIoT:wso2port/weather/2",
+      "@type" : [ "InterIoT:LogVPmod#MeteoCabin", "sosa:Sensor", "iiot:IoTDevice" ],
+      "iiot:hasName" : "P.Felipe",
+      "iiotex:hasLocalId" : "http://inter-iot.eu/wso2port/weather/2",
+      "sosa:isHostedBy" : {
+        "@id" : "http://www.inter-iot.eu/wso2port"
+      },
+      "sosa:observes" : {
+        "@id" : "_:b36"
+      }
+    }, {
+      "@id" : "http://www.inter-iot.eu/wso2port",
+      "@type" : "http://purl.oclc.org/NET/ssnx/ssn#Deployment"
+    } ],
+    "@id" : "InterIoT:message/payload"
+  } ],
+  "@context" : {
+    "iiotex" : "http://inter-iot.eu/GOIoTPex#",
+    "geosparql" : "http://www.opengis.net/ont/geosparql#",
+    "iiot" : "http://inter-iot.eu/GOIoTP#",
+    "InterIoT" : "http://inter-iot.eu/",
+    "ssn" : "http://www.w3.org/ns/ssn/",
+    "sosa" : "http://www.w3.org/ns/sosa/"
+  }
+}
