@@ -68,7 +68,7 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 @SwaggerDefinition(
         info = @Info(
                 description = "INTER-IoT Middleware Layer Interoperability Components",
-                version = "2.5.0",
+                version = "2.5.1-SNAPSHOT",
                 title = "MW2MW",
                 termsOfService = "http://www.inter-iot-project.eu/",
                 contact = @Contact(
