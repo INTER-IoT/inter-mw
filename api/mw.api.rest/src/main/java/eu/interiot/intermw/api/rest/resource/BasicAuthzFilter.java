@@ -90,7 +90,9 @@ public class BasicAuthzFilter implements ContainerRequestFilter {
                         return;
                     }
                     String[] tokens = line.split(":");
-                    allowedUsers.put(tokens[0], tokens[1]);
+                    String username = tokens[0];
+                    String password = tokens[1].toLowerCase();
+                    allowedUsers.put(username, password);
                 });
             } catch (Exception e) {
                 throw new MiddlewareException("Invalid format of password file %s.", passwordFile);
