@@ -400,7 +400,7 @@ public class InterMwApiREST {
     @Path("/devices/query")
     @Produces(APPLICATION_JSON)
     @ApiOperation(value = "Query for devices",
-            tags = {"Devices, Query"})
+            tags = {"Queries"})
     @ApiResponses(value = {
             @ApiResponse(code = 202, message = "The request has been accepted for processing.", response = MwAsyncResponse.class)})
     public Response queryDevices(IoTDeviceFilter ioTDeviceFilter) throws MiddlewareException {
@@ -414,7 +414,7 @@ public class InterMwApiREST {
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces({APPLICATION_JSON, MediaType.TEXT_PLAIN})
     @ApiOperation(value = "Execute SELECT, CONSTRUCT or ASK sparql queries directly on the intermw persistence store",
-            tags = {"Query"})
+            tags = {"Queries"})
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "The request has been executed successfully.", response = Response.class)})
     public Response queryAll(String query) {
@@ -539,7 +539,7 @@ public class InterMwApiREST {
     @Produces(APPLICATION_JSON)
     @ApiOperation(value = "Query sensors for data",
             notes = "Query all intermw sensors for data",
-            tags = "Sensors")
+            tags = "Queries")
     @ApiResponses(value = {
             @ApiResponse(code = 202, message = "The request has been accepted for processing.", response = MwAsyncResponse.class),
             @ApiResponse(code = 400, message = "Invalid request.")
@@ -554,7 +554,7 @@ public class InterMwApiREST {
     @Produces(APPLICATION_JSON)
     @ApiOperation(value = "Query one device sensor data",
             notes = "Query one intermw sensor for data",
-            tags = "Device Sensor")
+            tags = "Queries")
     public Response queryDeviceSensorData(@QueryParam("platformId") String platformId, @PathParam("deviceId") String deviceId) throws InterruptedException, MiddlewareException, TimeoutException, ExecutionException {
         Message message = interMwApi.getSensorDataForDevices(getClientId(), platformId, Collections.singletonList(deviceId));
         return Response.ok(message).build();
