@@ -50,6 +50,7 @@ import eu.interiot.intermw.commons.model.enums.QueryType;
 import eu.interiot.intermw.commons.requests.*;
 import eu.interiot.intermw.services.registry.ParliamentRegistry;
 import eu.interiot.message.Message;
+import eu.interiot.message.MessageMetadata;
 import eu.interiot.message.utils.MessageUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -68,9 +69,9 @@ import java.util.stream.Collectors;
  */
 public class InterMwApiImpl implements InterMwApi {
     private static final Logger logger = LoggerFactory.getLogger(InterMwApiImpl.class);
-    private Configuration configuration;
     private static ApiRequestManager apiRequestManager;
     private static QueueImpl queue;
+    private Configuration configuration;
     private ParliamentRegistry registry;
 
     public InterMwApiImpl(Configuration configuration) throws MiddlewareException {
@@ -227,7 +228,10 @@ public class InterMwApiImpl implements InterMwApi {
 
     @Override
     public List<Platform> listPlatforms() throws MiddlewareException {
-        return getRegistry().listPlatforms();
+        List<Platform> platforms = getRegistry().listPlatforms();
+        getRegistry().setPlatformInfoStatistics(platforms);
+        setPlatformMessageStatistics(platforms);
+        return platforms;
     }
 
     @Override
@@ -252,7 +256,10 @@ public class InterMwApiImpl implements InterMwApi {
 
     @Override
     public Platform getPlatform(String platformId) throws MiddlewareException {
-        return getRegistry().getPlatformById(platformId);
+        Platform platform = getRegistry().getPlatformById(platformId);
+        getRegistry().setPlatformInfoStatistics(platform);
+        setPlatformMessageStatistics(Collections.singletonList(platform));
+        return platform;
     }
 
     @Override
@@ -869,6 +876,19 @@ public class InterMwApiImpl implements InterMwApi {
 
     String sendToARM(Message message) throws MiddlewareException {
         return sendToARM(Collections.singletonList(message)).get(0);
+    }
+
+    private void setPlatformMessageStatistics(List<Platform> platforms) {
+        for (Platform platform : platforms) {
+            MessageMetadata metadata = apiRequestManager.getLastMessageMetadataInfo(platform.getPlatformId());
+            if (metadata != null) {
+                PlatformStatistics platformStatistics = platform.getPlatformStatistics();
+                if (metadata.getDateTimeStamp().isPresent()) {
+                    platformStatistics.setLastMessageTime(metadata.getDateTimeStamp().get().getTimeInMillis());
+                }
+                platformStatistics.setLastMessageTypes(metadata.getMessageTypes());
+            }
+        }
     }
 
     private List<String> sendToARM(List<Message> messages) throws MiddlewareException {

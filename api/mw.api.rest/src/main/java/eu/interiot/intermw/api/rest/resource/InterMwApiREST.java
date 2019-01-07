@@ -106,13 +106,13 @@ public class InterMwApiREST {
     private static final Logger logger = LoggerFactory.getLogger(InterMwApiREST.class);
     private InterMwApiImpl interMwApi;
 
-    public InterMwApiREST() throws MiddlewareException {
-        interMwApi = new InterMwApiImpl(Context.getConfiguration());
-    }
-
     @Inject
     @javax.ws.rs.core.Context
     private SecurityContext securityContext;
+
+    public InterMwApiREST() throws MiddlewareException {
+        interMwApi = new InterMwApiImpl(Context.getConfiguration());
+    }
 
     @GET
     @Path("/clients")

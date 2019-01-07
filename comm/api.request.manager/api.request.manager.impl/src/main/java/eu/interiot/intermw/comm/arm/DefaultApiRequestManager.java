@@ -77,20 +77,18 @@ import java.util.*;
 public class DefaultApiRequestManager extends AbstractControlComponent implements ApiRequestManager {
 
     private final static Logger logger = LoggerFactory.getLogger(DefaultApiRequestManager.class);
-
-    private final Map<String, ApiCallback<Message>> clientCallbacks = Collections.synchronizedMap(new HashMap<>());
-
-    private final Map<String, String> conversationClientMap = Collections.synchronizedMap(new HashMap<>());
-
-    private Publisher<Message> publisherPRM;
-
     private static QueueImpl queue;
-
+    private static Map<String, Message> queryResponseMap = Collections.synchronizedMap(new HashMap<>());
+    private final Map<String, ApiCallback<Message>> clientCallbacks = Collections.synchronizedMap(new HashMap<>());
+    private final Map<String, String> conversationClientMap = Collections.synchronizedMap(new HashMap<>());
+    private Publisher<Message> publisherPRM;
     private ParliamentRegistry registry;
-
     private Configuration configuration;
 
-    private static Map<String, Message> queryResponseMap = Collections.synchronizedMap(new HashMap<>());
+    /**
+     * Map of platformId -> metadata of last message received from the platform
+     */
+    private Map<String, MessageMetadata> lastMessageMetadataMap = new HashMap<>();
 
     /**
      * Constructor for the DefaultApiRequestManager
@@ -130,11 +128,17 @@ public class DefaultApiRequestManager extends AbstractControlComponent implement
         return queryResponseMap.get(conversationId);
     }
 
-    private void handleFromPRM(Message message) throws MiddlewareException {
-        String messageID = message.getMetadata().getMessageID().get();
-        String conversationId = message.getMetadata().getConversationId().orElse(null);
-        Set<URIManagerMessageMetadata.MessageTypesEnum> messageTypes = message.getMetadata().getMessageTypes();
+    private void handleFromPRM(Message message) {
+        MessageMetadata metadata = message.getMetadata();
+        String messageID = metadata.getMessageID().get();
+        String conversationId = metadata.getConversationId().orElse(null);
+        Set<URIManagerMessageMetadata.MessageTypesEnum> messageTypes = metadata.getMessageTypes();
         logger.debug("Processing message {}...", messageID);
+
+        if ((metadata.asPlatformMessageMetadata().getSenderPlatformId().isPresent())) {
+            String senderPlatformId = metadata.asPlatformMessageMetadata().getSenderPlatformId().get().toString();
+            lastMessageMetadataMap.put(senderPlatformId, metadata);
+        }
 
         if (Collections.disjoint(messageTypes,
                 EnumSet.of(MessageTypesEnum.RESPONSE, MessageTypesEnum.OBSERVATION, MessageTypesEnum.ERROR))) {
@@ -258,6 +262,10 @@ public class DefaultApiRequestManager extends AbstractControlComponent implement
             clientCallbacks.get(clientId).stop();
             clientCallbacks.remove(clientId);
         }
+    }
+
+    public MessageMetadata getLastMessageMetadataInfo(String platformId) {
+        return lastMessageMetadataMap.get(platformId);
     }
 
     private void restoreState() throws MiddlewareException {

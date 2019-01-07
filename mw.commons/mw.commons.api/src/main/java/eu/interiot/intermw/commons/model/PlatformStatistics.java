@@ -32,11 +32,17 @@
  */
 package eu.interiot.intermw.commons.model;
 
+import eu.interiot.message.managers.URI.URIManagerMessageMetadata.MessageTypesEnum;
+
+import java.util.Set;
+
 public class PlatformStatistics {
 
     private int deviceCount;
     private int subscribedDeviceCount;
     private int subscriptionCount;
+    private long lastMessageTime;
+    private Set<MessageTypesEnum> lastMessageTypes;
 
     public int getDeviceCount() {
         return deviceCount;
@@ -62,4 +68,19 @@ public class PlatformStatistics {
         this.subscriptionCount = subscriptionCount;
     }
 
+    public Set<MessageTypesEnum> getLastMessageTypes() {
+        return lastMessageTypes;
+    }
+
+    public void setLastMessageTypes(Set<MessageTypesEnum> lastMessageTypes) {
+        this.lastMessageTypes = lastMessageTypes;
+    }
+
+    public long getLastMessageTime() {
+        return lastMessageTime;
+    }
+
+    public void setLastMessageTime(long lastMessageTime) {
+        this.lastMessageTime = lastMessageTime;
+    }
 }

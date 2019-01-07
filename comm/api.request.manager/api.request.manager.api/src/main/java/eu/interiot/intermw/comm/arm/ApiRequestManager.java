@@ -42,6 +42,7 @@ import eu.interiot.intermw.commons.exceptions.MiddlewareException;
 import eu.interiot.intermw.commons.interfaces.ApiCallback;
 import eu.interiot.intermw.commons.model.Client;
 import eu.interiot.message.Message;
+import eu.interiot.message.MessageMetadata;
 
 /**
  * API Request Manager
@@ -94,6 +95,13 @@ public interface ApiRequestManager {
      * @param conversationId
      */
     Message getQueryResponseMessage(String conversationId);
+
+    /**
+     * Returns metadata of the last message received by INTER-MW from the specified platform
+     *
+     * @param platformId
+     */
+    MessageMetadata getLastMessageMetadataInfo(String platformId);
 
     /////////////////////////////////////////////////////////////////////////////
 

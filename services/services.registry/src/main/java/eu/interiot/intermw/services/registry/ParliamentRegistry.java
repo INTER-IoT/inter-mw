@@ -324,7 +324,7 @@ public class ParliamentRegistry {
                 }
             }
 
-            return setPlatformStatistics(platformList);
+            return platformList;
         }
     }
 
@@ -344,7 +344,6 @@ public class ParliamentRegistry {
             if (platformList.isEmpty()) {
                 return null;
             } else if (platformList.size() == 1) {
-                platformList = setPlatformStatistics(platformList);
                 return platformList.get(0);
             } else {
                 throw new MiddlewareException("Multiple platforms found for a single platform ID.");
@@ -1392,14 +1391,17 @@ public class ParliamentRegistry {
         return pss;
     }
 
-    private List<Platform> setPlatformStatistics(List<Platform> platforms) throws MiddlewareException {
+    public void setPlatformInfoStatistics(Platform platform) throws MiddlewareException {
+        setPlatformInfoStatistics(Collections.singletonList(platform));
+    }
+
+    public void setPlatformInfoStatistics(List<Platform> platforms) throws MiddlewareException {
         ParameterizedSparqlString pssCountDevices = getPSSfromTemplate("platforms-countDevices.rq");
         ParameterizedSparqlString pssCountSubscribedDevices = getPSSfromTemplate("platforms-countSubscribedDevices.rq");
         ParameterizedSparqlString pssCountSubscriptions = getPSSfromTemplate("platforms-countSubscriptions.rq");
         HashMap<String, Integer> devicesPerPlatform = new HashMap<>();
         HashMap<String, Integer> subscriptionsPerPlatform = new HashMap<>();
         HashMap<String, Integer> subscribedDevicesPerPlatform = new HashMap<>();
-        List<Platform> setPlatforms = new ArrayList<>();
 
         try (RDFConnection conn = connect()) {
             Consumer<QuerySolution> consumerDevicesPerPlatform = querySolution -> {
@@ -1432,9 +1434,7 @@ public class ParliamentRegistry {
             platformStatistics.setSubscribedDeviceCount(subscribedDevicesPerPlatform.getOrDefault(platformId, 0));
             platformStatistics.setSubscriptionCount(subscriptionsPerPlatform.getOrDefault(platformId, 0));
             platform.setPlatformStatistics(platformStatistics);
-            setPlatforms.add(platform);
         }
-        return setPlatforms;
     }
 
     private RDFConnection connect() {
